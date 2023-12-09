@@ -1,0 +1,46 @@
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+  }
+  
+  .block-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 66.666%;
+    height: 50px;
+  }
+  
+  .block-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.333%;
+    height: 50px;
+  }
+  
+  .block-3 {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 33.333%;
+    height: 50px;
+  }
+  
+  .block-4 {
+    position: absolute;
+    top: 50px;
+    left: 33.333%;
+    width: 33.333%;
+    height: 50px;
+  }
+  
+  .block-5 {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 33.333%;
+    height: 50px;
+  }
+  
