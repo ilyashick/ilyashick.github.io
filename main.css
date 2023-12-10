@@ -1,22 +1,38 @@
-@font-face {
-    font-family: UbuntuMono;
-    src: url(MainFont.ttf);
-}
-
 body {
     margin: 0;
     padding: 0;
-  }
+    height: 100vh;
+    position: relative;
+    background-color: #494949;
+    background: url('bg.jpg') repeat;
+    background-size: 52.5px 52.5px;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(MainFont.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    z-index: 1;
+}
 
 header {
     width: 100%;
-    height: 100px;
+    height: 70px;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .header-block {
-    background-color: #5e5e5e;
+p {
+    color: #FFFFFF;
+}
+
+.header-block {
+    background-color: #353535;
     height: 35px;
     border: 2px solid #000;
     margin: 0;
@@ -24,10 +40,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+    display: none;
 }
 
 .header-text {
     margin: 0;
+    font-size: 25px
 }
   
 .block-1 {
@@ -41,7 +60,7 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    width: 33.333%;
+    width: 100%;
 }
 
 .block-3 {
@@ -62,6 +81,110 @@ header {
     position: absolute;
     top: 35px;
     right: 0;
-    width: 33.333%;
+    width: 100%;
 }
-  
+
+.footer-block {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    display:none;
+}
+
+.footer-subblock {
+    height: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #353535;
+    transition: background-color 0.3s;
+}
+
+.footer-subblock:hover {
+    background-color: #2f2f2f;
+}
+
+.footer-subblock:active {
+    background-color: #292929;
+}
+
+.footer-subblock a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.game-button {
+    color: #ffffff;
+    border: 2px solid #000;
+    background-color: #353535;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    height: 120px;
+}
+
+.game-button:hover {
+    background-color: #2f2f2f;
+}
+
+.game-button:active {
+    background-color: #292929;
+}
+
+.game-button span {
+    position: relative;
+    font-size: 2em;
+    max-width: 100%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index:3
+}
+
+.current-buttons {
+    margin-top: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-roblox-button{
+    position: relative;
+}
+
+.download-progbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #232323;
+    width: 0%;
+    z-index: 2;
+}
+
+#rank-notification {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 10px;
+    color: #ffffff;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }

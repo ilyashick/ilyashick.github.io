@@ -2,25 +2,54 @@
 <html>
     <head>
         <title>Obby Incremental v0.0.0</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
-        <header>
-            <div class="block-1 header-block">
-              <p class="header-text">Your skill is:</p>
+        <header id="big-header">
+            <div class="block-1 header-block" style="display:none">
+                <p class="header-text">Your skill is:</p>
             </div>
             <div class="block-2 header-block">
-              <p class="header-text">Your Rank is:</p>
+                <p class="header-text">Your Rank is:</p>
             </div>
-            <div class="block-3 header-block">
-              <p class="header-text">Tier 1</p>
+            <div class="block-3 header-block" style="display:none">
+                <p class="header-text">Tier 1 (1.00)</p>
             </div>
-            <div class="block-4 header-block">
-              <p class="header-text">Effortless Difficulty</p>
+            <div class="block-4 header-block" style="display:none"> 
+                <p class="header-text">Effortless Difficulty (1.00)</p>
             </div>
             <div class="block-5 header-block">
-              <p class="header-text">Not an obby player</p>
+                <p class="header-text" id="rank-text">Not an obby player</p>
             </div>
-          </header>
+        </header>
+
+        <p id="rank-notification"></p>
+
+        <div class="current-buttons">
+            <button class="beginning-button game-button" style="display: flex" onclick="beginButton()">
+                <span>START GRINDING OBBIES!!!!</span>
+            </button>
+            <button class="download-roblox-button game-button" style="display: none" onclick="toggleDownload(this)">
+                <span>Download Roblox</span>
+                <div class="download-progbar"></div>
+            </button>
+        </div>
+
+        <footer class="footer-block">
+            <div class="footer-subblock" style="width: 32%">
+                <p>Version: 1.1.1</p>
+            </div>
+            <div class="footer-subblock" style="width: 20%">
+                <a href="/credits.html" target="_blank">Credits</a>
+            </div>
+            <div class="footer-subblock" style="width: 28%">
+                <a href="/changelog.html" target="_blank">Changelog</a>
+            </div>
+            <div class="footer-subblock" style="width: 20%">
+                <a href="https://discord.gg/nXya5ZGmVH" target="_blank">Discord</a>
+            </div>
+        </footer>
+        <script src="break_infinity.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>
